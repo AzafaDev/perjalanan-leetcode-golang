@@ -37,7 +37,7 @@ func isAnagram(s string, t string) bool {
 	arr1 := strings.Split(sortString(s), "")
 	arr2 := strings.Split(sortString(t), "")
 
-	for i := 0; i < len(arr1); i++ {
+	for i := range arr1 {
 		if arr1[i] != arr2[i] {
 			return false
 		}
